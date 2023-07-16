@@ -45,7 +45,14 @@ nav a{
     padding-top: 40px;
     text-align: center;
 }
+.banner-content{
+    width: 860px;
+    margin:40px auto;
+}
 
+.banner img{
+    width: 100%;
+}
 .section-title{
     font-size: 4rem;
     font-weight: 700;
@@ -58,14 +65,7 @@ nav a{
     padding-top: 20px;
     padding-bottom: 20px;
 }
-.banner-content{
-    width: 860px;
-    margin:40px auto;
-}
 
-.banner img{
-    width: 100%;
-}
 
 .btn-primary{
     border-radius: 8px;
@@ -75,4 +75,40 @@ nav a{
     padding: 20px 25px;
     color: #fff;
     border: none;
+    cursor: pointer;
+}
+
+
+
+
+
+/* media queries for mobile devices */
+
+
+@media screen and (max-width:576px) {
+
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .banner-content{
+        width: auto;
+    }
+    
+   
+}
+
+/* media queries for tablet/medium devices */
+
+
+@media screen and (min-width:576px) and (max-width: 960px) {
+    header{
+        padding: 50px;
+    }
+    .banner-content{
+        width: auto;
+    }
 }
