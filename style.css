@@ -79,7 +79,39 @@ nav a{
 }
 
 
+/* team sections styles  */
 
+.team-section{
+    padding: 40px 220px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    align-items: center;
+    gap: 50px;
+}
+
+.team-image-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.quick-list{
+    font-size: 3rem;
+    color: #727272;
+    font-weight: 500;
+}
+
+.of-our{
+    font-size: 3rem;
+    color: #131313;
+    font-weight: 700;
+}
+.text-features{
+    font-size: 3rem;
+    color: #FF900E;
+    font-weight: 700;
+}
 
 
 /* media queries for mobile devices */
