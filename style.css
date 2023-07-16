@@ -1,9 +1,44 @@
+/* font family imported from google fonts  */
+
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     font-family: 'Work Sans', sans-serif;
+}
+
+/* shared styles  */
+
+.section-title{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #131313;
+}
+
+.section-desc{
+    font-size: 1rem;
+    font-weight: 400px;
+    color: #727272;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.btn-primary{
+    border-radius: 8px;
+    background: #FF900E;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 20px 25px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* main styles  */
+main{
+    margin: 40px 150px;
 }
 
 /* header styles here  */
@@ -25,7 +60,9 @@ nav h3{
     font-weight: 700;
     color: #131313;
 }
-nav ul {
+nav
+
+ul {
     display: flex;
     gap: 50px;
 }
@@ -53,41 +90,22 @@ nav a{
 .banner img{
     width: 100%;
 }
-.section-title{
+.header-title{
     font-size: 4rem;
     font-weight: 700;
     color: #131313;
-}
-.section-desc{
-    font-size: 1rem;
-    font-weight: 400px;
-    color: #727272;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-
-.btn-primary{
-    border-radius: 8px;
-    background: #FF900E;
-    font-size: 1.25rem;
-    font-weight: 600;
-    padding: 20px 25px;
-    color: #fff;
-    border: none;
-    cursor: pointer;
 }
 
 
 /* team sections styles  */
 
 .team-section{
-    padding: 40px 220px;
     display: flex;
     justify-content: space-around;
     margin: auto;
     align-items: center;
     gap: 50px;
+    padding: 0px 50px;
 }
 
 .team-image-container{
@@ -113,15 +131,66 @@ nav a{
     font-weight: 700;
 }
 
+/* featured section styles  */
+
+.featured-section{
+    margin: 100px auto;
+    display: flex;
+    gap: 30px;
+}
 
 
 
+.featured-card-container .card{
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 25px;
+    margin-bottom: 20px;
+}
+.featured-card-container .card h4{
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #131313;
+}
+
+.featured-img img{
+    /* width: auto; */
+    margin-left: 100px;
+}
+
+.featured-content .section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.featured-img .badge{
+    border-radius: 8px;
+    background: #FF900E;
+    width: 340px;
+    padding: 30px 0px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+
+}
+.featured-img .badge h3{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #fff;
+}
+.featured-img .badge p{
+    font-size: 1.5rem;
+    color: #fff;
+}
 
 /* media queries for mobile devices */
 
 
 @media screen and (max-width:576px) {
-
+    main{
+        margin: 0;
+    }
     header,
     .team-section{
         padding: 20px;
@@ -141,6 +210,24 @@ nav a{
     .team-section{
         text-align: center;
     }
+    .featured-section{
+        flex-direction: column;
+    }
+    .featured-img img{
+        width: 80%;
+        margin-left: 0;
+    }
+    .featured-section{
+        text-align: center;
+    }
+    .featured-content{
+        padding: 0px;
+    }
+    .featured-img .badge{
+        bottom: 0;
+        margin: auto;
+    }
+
    
 }
 
@@ -161,6 +248,23 @@ nav a{
     }
     .team-section img{
         width: 200px;
+    }
+    .featured-section{
+        flex-direction: column;
+    }
+    .featured-img img{
+        width: 80%;
+        margin-left: 0;
+    }
+    .featured-section{
+        text-align: center;
+    }
+    .featured-content{
+        padding: 0px;
+    }
+    .featured-img .badge{
+        bottom: 0;
+        margin: auto;
     }
    
 }
